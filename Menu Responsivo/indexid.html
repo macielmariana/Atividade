@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Idade</title>
+</head>
+<body>
+    <h1>Sistema que Calcula sua Idade</h1>
+    <p>Qual ano você nasceu?</p>
+    <input id="anonascimento">
+    <button onclick="idade()">Calcular</button>
+    <p id="resultado">Resultado</p>
+</body>
+<script>
+    function idade(){
+        var ano, calculo
+        ano= document.getElementById("anonascimento").value;
+        calculo = 2022 - ano;
+        document.getElementById("resultado").innerHTML=calculo;
+    }
+</script>
+</html>
